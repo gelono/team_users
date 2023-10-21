@@ -31,6 +31,9 @@ jobs:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: 12345
           POSTGRES_DB: teams
+          POSTGRES_USER_TEST: postgres
+          POSTGRES_PASSWORD_TEST: 12345
+          POSTGRES_DB_TEST: test_teams
         ports:
           - 5432:5432
     steps:

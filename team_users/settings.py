@@ -99,6 +99,14 @@ DATABASES = {
         'PASSWORD': os.environ.get('DB_PASSWORD'),
         'HOST': os.environ.get('DB_HOST'),
         'PORT': os.environ.get('DB_PORT'),
+    },
+    'test': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('POSTGRES_DB_TEST', 'test_teams'),
+        'USER': os.getenv('POSTGRES_USER_TEST', 'postgres'),
+        'PASSWORD': os.getenv('POSTGRES_PASSWORD_TEST', '12345'),
+        'HOST': os.getenv('POSTGRES_HOST_TEST', 'localhost'),
+        'PORT': os.getenv('POSTGRES_PORT_TEST', '5432'),
     }
 }
 
