@@ -101,7 +101,7 @@ DATABASES = {
         'PORT': os.environ.get('DB_PORT'),
     },
     'test': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': os.getenv('POSTGRES_DB_TEST', 'test_teams'),
         'USER': os.getenv('POSTGRES_USER_TEST', 'postgres'),
         'PASSWORD': os.getenv('POSTGRES_PASSWORD_TEST', '12345'),
