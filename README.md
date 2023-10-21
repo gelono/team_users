@@ -6,6 +6,8 @@ The application has two main endpoints: /teams and /participants. Access rights 
 The postgres database is used with DEBUG=True and otherwise database is sqlite. There are two main entities in the database - Team and Participant. There is a one-to-many relationship between them.
 Participant is necessarily tied to Team. In turn, a Team may not have participants.
 
+It also implements a CI element with automatic code checking - flake8 and unit tests.
+
 To run the project use the following commands:
 
 Install requirements:
