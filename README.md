@@ -8,6 +8,8 @@ Participant is necessarily tied to Team. In turn, a Team may not have participan
 
 It also implements a CI element with automatic code checking - flake8 and unit tests.
 
+After starting the application, create a superuser with the command: python manage.py createsuperuser.
+
 To run the project use the following commands:
 
 Install requirements:
