@@ -28,12 +28,9 @@ jobs:
       postgres:
         image: postgres
         env:
-          DB_USER: postgres
-          DB_PASSWORD: 12345
-          DB_NAME: teams
           POSTGRES_USER_TEST: postgres
-          POSTGRES_PASSWORD_TEST: 12345
-          POSTGRES_DB_TEST: test_teams
+          POSTGRES_PASSWORD_TEST: admin123
+          POSTGRES_DB_TEST: postgres
         ports:
           - 5432:5432
     steps:
