@@ -1,7 +1,7 @@
 Project "Teams and Participants".
 
 This is a REST API implementation using Django. API documentation is available at localhost:8000/swagger.
-The application has two main endpoints: /teams and /participants. Access rights are implemented here - all CRUD actions are available to the admin. An authorized user can only read information.
+The application has two main endpoints: /teams and /participants. Access rights are implemented here - all CRUD actions are available to the admin. An authorized user can only read information. You can authenticate using a Token or Basic Authentication.
 
 The postgres database is used with USE_POSTGRES=True as variable environment and otherwise database is sqlite. There are two main entities in the database - Team and Participant. There is a one-to-many relationship between them.
 Participant is necessarily tied to Team. In turn, a Team may not have participants.
